@@ -21,3 +21,17 @@ img{max-width:100%}
 
 /* Current project on phones: the room sits above the steps and stays pinned while they scroll by */
 @media (max-width: 760px){div:has(> .room){order:-1;top:0!important;z-index:2;background:#FBFAF6;padding:8px 0}}
+
+/* Phone menu: a Menu button folds the top navigation open (js/menu.js). Without JavaScript the menu simply stays open. */
+.menu-toggle{display:none}
+@media (max-width: 760px){
+  header > div{align-items:center!important}
+  .menu-toggle{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 14px;border:1px solid #1B1916;background:transparent;color:#1B1916;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+  .menu-toggle:hover{border-color:#9B2C1F;color:#9B2C1F}
+  .menu-toggle svg{display:block}
+  .js .main-nav{display:none!important}
+  .main-nav{flex-basis:100%;flex-direction:column;gap:0!important;margin-top:8px;border-top:1px solid #E2DCD0}
+  .js .main-nav.open{display:flex!important}
+  .main-nav a{padding:14px 0!important;border-bottom:1px solid #E2DCD0;font-size:17px}
+  .main-nav a.connect{align-self:stretch!important;justify-content:center;margin:16px 0 8px!important;padding:0 16px!important;min-height:48px;border-bottom:0;font-size:13px!important}
+}

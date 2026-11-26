@@ -17,6 +17,8 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/fonts/newsreader-roman.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/base.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="/js/menu.js" defer></script>
 <style>
 body{margin:0;background:#FBFAF6}
 a{color:#1B1916;text-decoration-color:#C9BFAE;text-underline-offset:3px}
@@ -31,7 +33,8 @@ a:hover{color:#9B2C1F}
   <header style="border-bottom: 1px solid #E2DCD0">
     <div style="max-width: 1180px; margin: 0 auto; padding: 18px 32px; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px">
       <a href="/" style="text-decoration: none; font-size: 19px; font-weight: 500; letter-spacing: 0.06em; font-variant-caps: all-small-caps">Matthew Lingafelt</a>
-      <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px 22px; font-size: 15px; font-style: italic">
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav"><svg width="16" height="12" viewBox="0 0 16 12" aria-hidden="true"><path d="M0 1h16M0 6h16M0 11h16" stroke="currentColor" stroke-width="1.5"/></svg><span class="menu-label">Menu</span></button>
+      <nav aria-label="Main" id="main-nav" class="main-nav" style="display: flex; flex-wrap: wrap; gap: 4px 22px; font-size: 15px; font-style: italic">
         <a href="/" style="text-decoration: none; padding-block: 12px">Home</a>
         <a href="/#work" style="text-decoration: none; padding-block: 12px">Work</a>
         <a href="/current-project" style="text-decoration: none; padding-block: 12px">Current project</a>
