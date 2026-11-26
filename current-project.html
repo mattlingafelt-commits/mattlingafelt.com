@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who Agreed? · Current project · Matthew Lingafelt</title>
+<meta name="description" content="A public archive of the documents that govern ten companion robots’ data, described once the way the company tells it and once from the side of the people in the room who never agreed to anything.">
+<link rel="canonical" href="https://mattlingafelt.com/current-project">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Matthew Lingafelt">
+<meta property="og:url" content="https://mattlingafelt.com/current-project">
+<meta property="og:title" content="Who Agreed? · Current project · Matthew Lingafelt">
+<meta property="og:description" content="A public archive of the documents that govern ten companion robots’ data, described once the way the company tells it and once from the side of the people in the room who never agreed to anything.">
+<meta property="og:image" content="https://mattlingafelt.com/images/family-watching-television-1958.jpg">
+<meta property="og:image:alt" content="A family in 1958 gathered in their living room around a television set">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/newsreader-roman.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/base.css">
+<style>
+body{margin:0;background:#FBFAF6}
+a{color:#1B1916;text-decoration-color:#C9BFAE;text-underline-offset:3px}
+a:hover{color:#9B2C1F}
+@keyframes binL{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.bin-track{display:flex;width:max-content;white-space:nowrap}
+.bin-l{animation:binL 120s linear infinite}
+.room{--bg:#FBFAF6;--accent:#9B2C1F;--soft:#D7A595;--shelf:#E2DCD0;position:relative;aspect-ratio:10/9;border:1px solid #E2DCD0;background:#F3EEE4;overflow:clip}
+.room svg{display:block;width:100%;height:100%}
+.room.paused *{animation-play-state:paused!important}
+.room.nocam .fx-blink{opacity:.25;filter:none!important;animation:none}
+.room.nomic .ring,.room:not(.cloud) .send{display:none}
+.fx-blink{filter:drop-shadow(0 0 3px #F2A65A)}
+.floor{fill:var(--shelf);opacity:.45}
+.rug{fill:var(--bg);stroke:var(--soft);stroke-width:1.5;opacity:.85}
+.wood{fill:#C9BFAE}
+.frame{fill:none;stroke:#D2C8B8;stroke-width:3}
+.pane{fill:#EEE6D8}
+.curtain{fill:var(--shelf)}
+.paper{fill:var(--bg);stroke:#D2C8B8;stroke-width:2}
+.doodle{fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round}
+.ring{fill:none;stroke:var(--soft);stroke-width:1.5;transform-box:fill-box;transform-origin:50% 50%;animation:ping 3.2s ease-out infinite}
+.ring+.ring{animation-delay:-1.6s}
+.send{fill:none;stroke:var(--accent);stroke-width:1.5;stroke-linejoin:round}
+.link{stroke-dasharray:2 8;opacity:.45;animation:flow 1.2s linear infinite}
+.bit{fill:var(--accent);stroke:none;font:700 12px 'IBM Plex Mono',monospace;animation:send 3.2s linear infinite}
+.b0{animation-delay:0s}.b1{animation-delay:-.8s}.b2{animation-delay:-1.6s}.b3{animation-delay:-2.4s}
+.play-ball,.play-spin,.play-arm,.play-lean,.play-tail,.play-bot,.play-wheel{animation:1.6s ease-in-out infinite alternate}
+.play-spin,.play-arm,.play-lean,.play-tail,.play-wheel,.fx-blink,.fx-ant{transform-box:fill-box}
+.play-ball{animation-name:roll}
+.play-spin{transform-origin:50% 50%;animation-name:ballspin}
+.play-arm{transform-origin:50% 8%;transform:rotate(-40deg);animation-name:push}
+.play-lean{transform-origin:30% 100%;animation-name:lean}
+.play-tail{transform-origin:80% 0%;animation-name:sway}
+.play-bot{animation-name:nudge}
+.play-wheel{transform-origin:50% 50%;animation-name:wheel}
+.fx-blink{transform-origin:50% 50%;animation:fx-blink 4.6s linear infinite}
+.fx-ant{transform-origin:50% 100%;animation:fx-ant 3s ease-in-out infinite}
+.fx-pulse{fill:none;animation:fx-pulse 2.4s ease-in-out infinite}
+@keyframes ping{0%{transform:scale(.4);opacity:.55}100%{transform:scale(1.5);opacity:0}}
+@keyframes roll{to{transform:translateX(58px)}}
+@keyframes ballspin{to{transform:rotate(237deg)}}
+@keyframes push{from{transform:rotate(-58deg)}to{transform:rotate(-26deg)}}
+@keyframes lean{from{transform:rotate(5deg)}to{transform:rotate(0deg)}}
+@keyframes sway{from{transform:rotate(-5deg)}to{transform:rotate(7deg)}}
+@keyframes nudge{to{transform:translateX(11px)}}
+@keyframes wheel{to{transform:rotate(70deg)}}
+@keyframes send{0%{transform:translate(0,0);opacity:0}10%{opacity:1}88%{opacity:1}100%{transform:translate(121px,-326px);opacity:0}}
+@keyframes flow{to{stroke-dashoffset:-10}}
+@keyframes fx-blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+@keyframes fx-ant{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+@keyframes fx-pulse{0%,100%{opacity:.35}50%{opacity:1}}
+.pill{position:relative;display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.04em;padding:0 16px;min-height:44px;cursor:pointer;background:transparent;color:#1B1916;border:1px solid #C9BFAE}
+.pill:hover{border-color:#9B2C1F}
+.pill.on{background:#9B2C1F;color:#FBFAF6;border-color:#9B2C1F}
+.tog input{position:absolute;opacity:0;width:1px;height:1px}
+.tog::before{content:"";width:8px;height:8px;border-radius:50%;border:1.5px solid currentColor}
+.tog.on::before{background:currentColor}
+.tog:focus-within,.pill:focus-visible{outline:2px solid #9B2C1F;outline-offset:3px}
+.step{transition:opacity .4s}
+@media (prefers-reduced-motion: reduce){.bin-l,.room *{animation:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#top">Skip to content</a>
+<div style="background: #FBFAF6; color: #1B1916; font-family: 'Newsreader', Georgia, serif; font-size: 17px; line-height: 1.65">
+
+  <header style="border-bottom: 1px solid #E2DCD0">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 18px 32px; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px">
+      <a href="/" style="text-decoration: none; font-size: 19px; font-weight: 500; letter-spacing: 0.06em; font-variant-caps: all-small-caps">Matthew Lingafelt</a>
+      <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px 22px; font-size: 15px; font-style: italic">
+        <a href="/#work" style="text-decoration: none; padding-block: 12px">Work</a>
+        <a href="/current-project" aria-current="page" style="text-decoration: underline; text-decoration-color: #9B2C1F; text-decoration-thickness: 2px; padding-block: 12px">Current project</a>
+        <a href="/statements" style="text-decoration: none; padding-block: 12px">Statements</a>
+        <a href="/teaching" style="text-decoration: none; padding-block: 12px">Teaching</a>
+        <a href="/about" style="text-decoration: none; padding-block: 12px">About</a>
+        <a href="/cv" style="text-decoration: none; padding-block: 12px">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 0 32px">
+
+      <section aria-labelledby="ar-h" style="padding: 56px 0 56px; display: flex; flex-wrap: wrap; gap: 16px 36px">
+        <p style="margin: 0; flex: 0 0 190px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #9B2C1F; padding-top: 14px">Current project<br><span style="color: #5E584F">Research preview</span></p>
+        <div style="flex: 1 1 600px; min-width: 0; max-width: 760px; display: flex; flex-direction: column; gap: 16px">
+          <h1 id="ar-h" style="margin: 0; font-weight: 500; font-size: clamp(36px, 4vw, 52px); line-height: 1.08; letter-spacing: -0.01em">What one robot sees in one child’s room.</h1>
+          <p style="margin: 0; font-size: 20px; font-style: italic; color: #3F3A33">A public archive of the documents that govern ten companion robots' data. I describe each document twice, once the way the company tells it and once from the side of the people in the room who never agreed to anything.</p>
+          <p style="margin: 0">For each robot, I archived the document that governs its data and described it with all fifteen Dublin Core elements. I pulled subject terms from FAST so they match the terms libraries already use. Companies change their policies without notice, so every record links to a dated copy on the Wayback Machine or archive.today.</p>
+        </div>
+      </section>
+
+      <section aria-label="The room, step by step" style="padding: 24px 0 64px; border-top: 2px solid #1B1916; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 24px 48px">
+        <ol style="flex: 5 1 300px; min-width: 0; margin: 0; padding: 0; list-style: none">
+          
+            <li data-step="0" class="step" style="min-height: 460px; display: flex; flex-direction: column; justify-content: center; gap: 10px; opacity: 1">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #9B2C1F">01</span>
+              <p style="margin: 0; font-size: 22px; line-height: 1.45">She calls it her friend. They roll a ball back and forth on her bedroom floor like any other afternoon.</p>
+            </li>
+          
+            <li data-step="1" class="step" style="min-height: 460px; display: flex; flex-direction: column; justify-content: center; gap: 10px; opacity: 1">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #9B2C1F">02</span>
+              <p style="margin: 0; font-size: 22px; line-height: 1.45">Those eyes are cameras. It can see her, her bed, and pretty much everything else in her room.</p>
+            </li>
+          
+            <li data-step="2" class="step" style="min-height: 460px; display: flex; flex-direction: column; justify-content: center; gap: 10px; opacity: 1">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #9B2C1F">03</span>
+              <p style="margin: 0; font-size: 22px; line-height: 1.45">It’s listening too. It can hear her, and anyone else talking nearby.</p>
+            </li>
+          
+            <li data-step="3" class="step" style="min-height: 460px; display: flex; flex-direction: column; justify-content: center; gap: 10px; opacity: 1">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #9B2C1F">04</span>
+              <p style="margin: 0; font-size: 22px; line-height: 1.45">And what it sees and hears doesn’t have to stay in her room. It can be sent off to the company’s servers.</p>
+            </li>
+          
+          <li data-step="4" class="step" style="padding: 120px 0 8px; display: flex; flex-direction: column; gap: 24px; opacity: 1">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #9B2C1F">05</span>
+            <p style="margin: 0; font-size: 22px; line-height: 1.45">She’s bonding with it. A parent clicked "I agree." <strong style="font-weight: 600; color: #9B2C1F">So who agreed?</strong></p>
+            <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px">
+              <legend style="padding: 0; margin-bottom: 14px; font-size: 16px; font-style: italic; color: #3F3A33">Now you try. Turn each feature on or off and see who can perceive what’s happening in her room.</legend>
+              <label class="pill tog on"><input type="checkbox" checked>Camera</label>
+              <label class="pill tog on"><input type="checkbox" checked>Microphone</label>
+              <label class="pill tog on"><input type="checkbox" checked>Cloud processing</label>
+              <button type="button" class="pill " aria-pressed="false">Pause motion</button>
+            </fieldset>
+            <div>
+              <p aria-live="polite" style="margin: 0 0 10px; display: flex; align-items: baseline; gap: 12px"><b style="font-size: 56px; font-weight: 500; line-height: 1; color: #9B2C1F">3</b><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5E584F">parties can perceive this room</span></p>
+              <ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid #E2DCD0">
+                
+                  <li style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; padding: 10px 0; border-bottom: 1px solid #E2DCD0; font-size: 16px; opacity: 1"><span style="font-weight: 500">The child</span><span style="font-style: italic; color: #5E584F">bonds with it</span></li>
+                
+                  <li style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; padding: 10px 0; border-bottom: 1px solid #E2DCD0; font-size: 16px; opacity: 1"><span style="font-weight: 500">The robot</span><span style="font-style: italic; color: #5E584F">sees and hears</span></li>
+                
+                  <li style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; padding: 10px 0; border-bottom: 1px solid #E2DCD0; font-size: 16px; opacity: 1"><span style="font-weight: 500">The company’s servers</span><span style="font-style: italic; color: #5E584F">get what it sees and hears</span></li>
+                
+              </ul>
+            </div>
+            <p style="margin: 0; font-size: 15px; color: #5E584F">This robot isn’t any one product. It stands in for the ten robots in my archive. When its eyes are lit, the camera is on. The rings mean it’s listening, and the rising numbers mean data is leaving the room.</p>
+          </li>
+        </ol>
+        <div style="flex: 7 1 420px; min-width: 0; position: sticky; top: 24px">
+          <div class="room   cloud " role="img" aria-label="Animated illustration: a girl sits on the rug in her bedroom, rolling a ball back and forth with a small wheeled companion robot. Lit eyes, rings and rising digits show the robot watching, listening and sending data out.">
+<svg viewBox="0 0 600 540" aria-hidden="true">
+        <rect class="floor" y="372" width="600" height="168"/>
+        <rect class="pane" x="40" y="68" width="112" height="142" rx="8"/>
+        <circle cx="120" cy="104" r="13" fill="#FFFFFF" opacity=".9"/>
+        <path class="frame" d="M96 68V210M40 139H152"/>
+        <rect class="frame" x="40" y="68" width="112" height="142" rx="8"/>
+        <path class="curtain" d="M28 60H62C60 110 52 170 34 216H28Z"/>
+        <path class="curtain" d="M164 60H130C132 110 140 170 158 216H164Z"/>
+        <rect class="wood" x="22" y="55" width="148" height="6" rx="3"/>
+        <rect x="262" y="146" width="14" height="44" rx="2" fill="#D7A595"/>
+        <rect x="278" y="154" width="12" height="36" rx="2" fill="#D5D7E0"/>
+        <rect x="292" y="142" width="16" height="48" rx="2" fill="#B5654F"/>
+        <rect x="310" y="158" width="11" height="32" rx="2" fill="#B9BBC6"/>
+        <rect x="327" y="150" width="13" height="40" rx="2" fill="#EAD9C9" transform="rotate(12 333 190)"/>
+        <path d="M405 170C398 152 392 150 388 146C392 160 398 166 405 170ZM405 170C404 150 408 142 412 136C414 152 410 164 405 170ZM405 170C412 158 420 154 424 152C420 162 414 168 405 170Z" fill="#8A9B6E"/>
+        <path d="M392 190h26l-3-20h-20Z" fill="#B9BBC6"/>
+        <rect class="wood" x="250" y="190" width="190" height="7" rx="3.5"/>
+        <rect class="paper" x="490" y="212" width="78" height="66" rx="5"/>
+        <rect class="doodle" x="512" y="238" width="34" height="24" rx="8"/>
+        <path class="doodle" d="M529 238v-9M522 250h.1M536 250h.1"/>
+        <rect class="wood" x="10" y="262" width="16" height="114" rx="6"/>
+        <rect class="wood" x="204" y="316" width="12" height="60" rx="5"/>
+        <rect x="20" y="322" width="190" height="44" rx="8" fill="#FFFFFF" stroke="#CDD0DA"/>
+        <rect x="32" y="302" width="60" height="26" rx="13" fill="#FBFBFE" stroke="#CDD0DA"/>
+        <g fill="#EFE7E3" stroke="#D9CFC9" stroke-width=".75">
+          <rect x="107" y="262" width="8" height="30" rx="4"/>
+          <rect x="119" y="264" width="8" height="28" rx="4" transform="rotate(14 123 292)"/>
+          <ellipse cx="117" cy="313" rx="15" ry="13"/>
+          <circle cx="117" cy="296" r="13"/>
+        </g>
+        <path d="M112 295h.1M122 295h.1" stroke="#2A2B33" stroke-width="3" stroke-linecap="round"/>
+        <rect x="96" y="318" width="114" height="48" rx="8" fill="#EAD9C9"/>
+        <rect x="96" y="318" width="114" height="12" rx="6" fill="#F3E9DD"/>
+        <ellipse class="rug" cx="330" cy="464" rx="218" ry="46"/>
+        <ellipse cx="330" cy="464" rx="186" ry="36" fill="none" stroke="var(--soft)" stroke-dasharray="3 7" opacity=".6"/>
+        <rect x="500" y="414" width="28" height="28" rx="4" fill="#EAD9C9" stroke="#D8C2AC"/>
+        <rect x="530" y="414" width="28" height="28" rx="4" fill="#FFFFFF" stroke="#CDD0DA"/>
+        <rect x="515" y="386" width="28" height="28" rx="4" fill="#D7A595"/>
+        <circle class="ring" cx="424" cy="412" r="80"/>
+        <circle class="ring" cx="424" cy="412" r="80"/>
+        <ellipse cx="238" cy="458" rx="46" ry="5" fill="#1B1916" opacity=".12"/>
+        <rect x="204" y="434" width="70" height="22" rx="11" fill="#5A5C68"/>
+        <rect x="262" y="445" width="20" height="11" rx="5.5" fill="#2A2B33"/>
+        <g class="play-lean">
+          <path class="play-tail" d="M214 336C196 342 190 366 198 388C206 378 211 364 216 352Z" fill="#2A2B33"/>
+          <rect x="214" y="372" width="36" height="68" rx="16" fill="#EAD9C9" stroke="#D8C2AC" stroke-width=".75"/>
+          <rect x="228" y="362" width="9" height="14" fill="#DCC7B6"/>
+          <circle cx="233" cy="346" r="22" fill="#DCC7B6"/>
+          <path d="M211 347.5C211 330 222.7 322.5 234.5 322.5C246.2 322.5 256.5 331.3 255 343C249 334.3 237.4 332.8 228.6 335.7C221.3 338.7 215.4 343 211 347.5Z" fill="#2A2B33"/>
+          <circle cx="246" cy="348" r="2.2" fill="#2A2B33"/>
+          <path d="M243 357q5 4 9 0" fill="none" stroke="#2A2B33" stroke-width="1.6" stroke-linecap="round"/>
+          <g class="play-arm">
+            <rect x="229" y="382" width="11" height="42" rx="5.5" fill="#E0C9B2" stroke="#D8C2AC" stroke-width=".75"/>
+            <circle cx="234.5" cy="424" r="5.5" fill="#DCC7B6"/>
+          </g>
+        </g>
+        <g class="play-ball">
+          <ellipse cx="286" cy="458" rx="14" ry="3" fill="#1B1916" opacity=".12"/>
+          <g class="play-spin">
+            <circle cx="286" cy="443" r="14" fill="#D7A595"/>
+            <path d="M272 443a14 14 0 0 1 28 0Z" fill="#B5654F"/>
+            <circle cx="286" cy="443" r="4" fill="#FFFFFF"/>
+          </g>
+        </g>
+        <g transform="translate(476 366) scale(-.92 .92)"><g class="play-bot">
+          <ellipse cx="60" cy="99" rx="46" ry="4.5" fill="#1B1916" opacity=".14"/>
+          <g class="fx-ant"><rect x="44.5" y="8" width="3" height="18" rx="1.5" fill="#B9BBC6"/><circle cx="46" cy="7" r="5" fill="#D7A595"/></g>
+          <path d="M14 72C14 42 34 22 60 22C86 22 106 42 106 72L106 78C106 84 102 88 96 88L24 88C18 88 14 84 14 78Z" fill="#FFFFFF" stroke="#CDD0DA"/>
+          <path d="M14 72L106 72L106 78C106 84 102 88 96 88L24 88C18 88 14 84 14 78Z" fill="#E3E5EC"/>
+          <rect x="52" y="38" width="50" height="26" rx="13" fill="#1E2028"/>
+          <g class="fx-blink" fill="none" stroke="#FFE1B0" stroke-width="4" stroke-linecap="round"><path d="M63 55a6.5 6.5 0 0 1 13 0"/><path d="M81 55a6.5 6.5 0 0 1 13 0"/></g>
+          <g class="play-wheel"><circle cx="36" cy="86" r="14" fill="#4A4C57"/><circle cx="36" cy="86" r="7" fill="#9A9CA8"/><rect x="34.5" y="73.5" width="3" height="7" rx="1.5" fill="#D5D7E0"/></g>
+          <g class="play-wheel"><circle cx="86" cy="86" r="14" fill="#4A4C57"/><circle cx="86" cy="86" r="7" fill="#9A9CA8"/><rect x="84.5" y="73.5" width="3" height="7" rx="1.5" fill="#D5D7E0"/></g>
+        </g></g>
+        <g class="send">
+          <path class="link" d="M434 362L555 48"/>
+          <path class="fx-pulse" transform="translate(540 22) scale(1.25)" d="M7 18h10a4 4 0 0 0 .6-7.96A6 6 0 0 0 6.1 11.1 3.5 3.5 0 0 0 7 18Z"/>
+          <text class="bit b0" x="430" y="370">1</text>
+          <text class="bit b1" x="430" y="370">0</text>
+          <text class="bit b2" x="430" y="370">1</text>
+          <text class="bit b3" x="430" y="370">0</text>
+        </g>
+      </svg>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="map-h" style="padding: 64px 0; border-top: 1px solid #E2DCD0; display: flex; flex-wrap: wrap; gap: 20px 36px">
+        <div style="flex: 0 0 190px; display: flex; flex-direction: column; gap: 8px">
+          <h2 id="map-h" style="margin: 0; font-size: 26px; font-weight: 500; line-height: 1.15">Mapping the network</h2>
+          <p style="margin: 0; font-size: 14px; font-style: italic; color: #5E584F">Who bonds, who consents, and who watches.</p>
+        </div>
+        <div style="flex: 1 1 640px; min-width: 0; display: flex; flex-wrap: wrap; gap: 32px">
+          <figure style="margin: 0; flex: 3 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+            <div style="border: 1px solid #E2DCD0; padding: 16px; background: #FFFFFF">
+              <img src="/images/network-map-12-robots.png" alt="Network map of 12 companion robots: ElliQ, LOVOT, aibo, Miko 3, Doly, Reachy Mini, Loona, Amazon Astro, Moxie, Vector, PARO, and Joy for All pet. They are grouped as closed vendor clouds, shared infrastructure, vendor cloud with community replacements, and offline. For most devices, the person who bonds with the robot is not the account holder who accepted its terms, and remote-access links reach the robot from outside the room." style="display: block; width: 100%; height: auto">
+            </div>
+            <figcaption style="font-size: 15px; color: #3F3A33"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #9B2C1F">Twelve companion robots.</span> This map traces who has access to the data around 12 companion robots. For most of them, the person who bonds with the robot isn’t the one who accepted its terms.</figcaption>
+          </figure>
+          <figure style="margin: 0; flex: 2 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+            <div style="border: 1px solid #E2DCD0; padding: 16px; background: #FFFFFF">
+              <img src="/images/network-map-paro.png" alt="Network map of PARO. The resident with dementia bonds with PARO, while the care facility owns it and holds the purchase and service agreement with the manufacturer, AIST / Intelligent System Co. There is no cloud, app, or remote viewer." style="display: block; width: 100%; height: auto">
+            </div>
+            <figcaption style="font-size: 15px; color: #3F3A33"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #9B2C1F">PARO in a care facility.</span> A resident in a care facility bonds with PARO, but the facility bought it and signed the agreement.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section aria-labelledby="posts-h" style="padding: 64px 0; border-top: 1px solid #E2DCD0; display: flex; flex-wrap: wrap; gap: 20px 36px">
+        <div style="flex: 0 0 190px; display: flex; flex-direction: column; gap: 8px">
+          <h2 id="posts-h" style="margin: 0; font-size: 26px; font-weight: 500; line-height: 1.15">Notes along the way</h2>
+          <p style="margin: 0; font-size: 14px; font-style: italic; color: #5E584F">My HT 930 blog posts on Knowledge Commons.</p>
+        </div>
+        <ol style="flex: 1 1 640px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 2px solid #1B1916">
+          
+            <li style="display: flex; flex-wrap: wrap; gap: 4px 28px; padding: 18px 0; border-bottom: 1px solid #E2DCD0">
+              <span style="flex: 0 0 120px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F; padding-top: 5px">Nov 17, 2026</span>
+              <span style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+                <a href="https://mrlingafelt.hcommons.org/2026/11/17/who-is-the-audience-when-a-robot-moves-in/" style="font-size: 21px; line-height: 1.3">Who Is the Audience When a Robot Moves In?</a>
+                <span style="font-size: 15px; font-style: italic; color: #3F3A33">Looking back on the semester, and what I want this portfolio to look like.</span>
+              </span>
+            </li>
+          
+            <li style="display: flex; flex-wrap: wrap; gap: 4px 28px; padding: 18px 0; border-bottom: 1px solid #E2DCD0">
+              <span style="flex: 0 0 120px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F; padding-top: 5px">Oct 30, 2026</span>
+              <span style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+                <a href="https://mrlingafelt.hcommons.org/2026/10/30/who-gets-counted-archives-silence-and-the-robots-we-bring-home/" style="font-size: 21px; line-height: 1.3">Who Gets Counted? Archives, Silence, and the Robots We Bring Home</a>
+                <span style="font-size: 15px; font-style: italic; color: #3F3A33">What public archives of AI harm leave out, and what my own archive is leaving out.</span>
+              </span>
+            </li>
+          
+            <li style="display: flex; flex-wrap: wrap; gap: 4px 28px; padding: 18px 0; border-bottom: 1px solid #E2DCD0">
+              <span style="flex: 0 0 120px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F; padding-top: 5px">Sep 27, 2026</span>
+              <span style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+                <a href="https://mrlingafelt.hcommons.org/2026/09/27/whos-in-the-network-companion-bots-care-and-scholarly-visibility/" style="font-size: 21px; line-height: 1.3">Who’s in the Network? Companion Bots, Care, and Scholarly Visibility</a>
+                <span style="font-size: 15px; font-style: italic; color: #3F3A33">I mapped who bonds with, consents to, and watches through companion robots.</span>
+              </span>
+            </li>
+          
+            <li style="display: flex; flex-wrap: wrap; gap: 4px 28px; padding: 18px 0; border-bottom: 1px solid #E2DCD0">
+              <span style="flex: 0 0 120px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F; padding-top: 5px">Sep 11, 2026</span>
+              <span style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+                <a href="https://mrlingafelt.hcommons.org/2026/09/11/when-digitization-seemingly-lacks-labor/" style="font-size: 21px; line-height: 1.3">When Digitization Seemingly Lacks Labor</a>
+                <span style="font-size: 15px; font-style: italic; color: #3F3A33">How much hidden labor goes into digital projects, and what it meant for me to build my site with AI.</span>
+              </span>
+            </li>
+          
+        </ol>
+      </section>
+
+      <section aria-labelledby="end-h" style="padding: 72px 0 96px; border-top: 1px solid #E2DCD0; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center">
+        <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #5E584F">Read every record in the archive</p>
+        <h2 id="end-h" style="margin: 0; font-weight: 400; font-style: italic; font-size: clamp(48px, 6vw, 84px); line-height: 1"><a href="https://whoagreed.hcommons.org" style="color: #9B2C1F; text-decoration-thickness: 2px; text-underline-offset: 10px">Who Agreed?</a></h2>
+        <p style="margin: 0; font-size: 17px; color: #3F3A33">Companion Robots and the People in the Room</p>
+        <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F">whoagreed.hcommons.org ↗</p>
+      </section>
+    </div>
+  </main>
+
+  <div style="display: flex; align-items: stretch; border-top: 1px solid #E2DCD0">
+    <p style="margin: 0; flex: none; padding: 6px 14px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #9B2C1F; background: #FBFAF6; border-right: 1px solid #E2DCD0; white-space: nowrap">Psalm 115:5-6 · NRSV</p>
+    <div aria-hidden="true" style="flex: 1 1 auto; min-width: 0; overflow: hidden; padding: 6px 0">
+      <div class="bin-track bin-l" style="animation-duration: 224s; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.3em; color: #D8CDBB"><span>01010100 01101000 01100101 01111001 00100000 01101000 01100001 01110110 01100101 00100000 01101101 01101111 01110101 01110100 01101000 01110011 00101100 00100000 01100010 01110101 01110100 00100000 01100100 01101111 00100000 01101110 01101111 01110100 00100000 01110011 01110000 01100101 01100001 01101011 00111011 00100000 01100101 01111001 01100101 01110011 00101100 00100000 01100010 01110101 01110100 00100000 01100100 01101111 00100000 01101110 01101111 01110100 00100000 01110011 01100101 01100101 00101110 00100000 01010100 01101000 01100101 01111001 00100000 01101000 01100001 01110110 01100101 00100000 01100101 01100001 01110010 01110011 00101100 00100000 01100010 01110101 01110100 00100000 01100100 01101111 00100000 01101110 01101111 01110100 00100000 01101000 01100101 01100001 01110010 00100000 00100000 00100000 </span><span>01010100 01101000 01100101 01111001 00100000 01101000 01100001 01110110 01100101 00100000 01101101 01101111 01110101 01110100 01101000 01110011 00101100 00100000 01100010 01110101 01110100 00100000 01100100 01101111 00100000 01101110 01101111 01110100 00100000 01110011 01110000 01100101 01100001 01101011 00111011 00100000 01100101 01111001 01100101 01110011 00101100 00100000 01100010 01110101 01110100 00100000 01100100 01101111 00100000 01101110 01101111 01110100 00100000 01110011 01100101 01100101 00101110 00100000 01010100 01101000 01100101 01111001 00100000 01101000 01100001 01110110 01100101 00100000 01100101 01100001 01110010 01110011 00101100 00100000 01100010 01110101 01110100 00100000 01100100 01101111 00100000 01101110 01101111 01110100 00100000 01101000 01100101 01100001 01110010 00100000 00100000 00100000 </span></div>
+    </div>
+  </div>
+  <footer style="border-top: 2px solid #1B1916">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 28px 32px 44px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 40px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F">
+      <p style="margin: 0; max-width: 520px; line-height: 1.6">Matthew Lingafelt · United Lutheran Seminary<br>This site doesn’t use cookies or trackers, and nothing here loads from anywhere else.<br>Scripture in the binary strips: NRSV, © 1989 National Council of the Churches of Christ in the USA. Used by permission.</p>
+      <nav aria-label="Site" style="display: flex; flex-wrap: wrap; gap: 0 20px">
+          <a href="/" style="padding-block: 10px">Home</a>
+          <a href="/current-project" style="padding-block: 10px">Current project</a>
+          <a href="/cv" style="padding-block: 10px">CV</a>
+          <a href="/privacy" style="padding-block: 10px">Privacy</a>
+        </nav>
+    </div>
+  </footer>
+</div>
+<script src="/js/room.js" defer></script>
+</body>
+</html>

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://mattlingafelt.com/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://mattlingafelt.com/statements.html</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://mattlingafelt.com/work.html</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://mattlingafelt.com/reflection.html</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://mattlingafelt.com/about.html</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://mattlingafelt.com/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://mattlingafelt.com/current-project</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://mattlingafelt.com/statements</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://mattlingafelt.com/teaching</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://mattlingafelt.com/about</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://mattlingafelt.com/cv</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://mattlingafelt.com/privacy</loc><lastmod>2026-11-26</lastmod></url>
 </urlset>

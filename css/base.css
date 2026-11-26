@@ -1,0 +1,23 @@
+/* Self-hosted fonts (SIL Open Font License, see fonts/). Each page's own design styles are inline in its <head>. */
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:400 600;font-display:swap;src:url(/fonts/newsreader-roman.woff2) format('woff2')}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:400 600;font-display:swap;src:url(/fonts/newsreader-italic.woff2) format('woff2')}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/plex-mono-400.woff2) format('woff2')}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/plex-mono-500.woff2) format('woff2')}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/plex-mono-700.woff2) format('woff2')}
+
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+img{max-width:100%}
+
+.skip{position:absolute;left:12px;top:-60px;z-index:10;padding:10px 16px;background:#1B1916;color:#FBFAF6;font-family:'IBM Plex Mono',monospace;font-size:13px}
+.skip:focus{top:12px;color:#FBFAF6}
+
+:focus-visible{outline:2px solid #9B2C1F;outline-offset:3px}
+.dark :focus-visible{outline-color:#E39A86}
+
+/* the canvas grids have fixed column counts; step them down on narrow screens */
+@media (max-width: 760px){.g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media (max-width: 480px){.g2,.g3{grid-template-columns:minmax(0,1fr)!important}}
+
+/* Current project on phones: the room sits above the steps and stays pinned while they scroll by */
+@media (max-width: 760px){div:has(> .room){order:-1;top:0!important;z-index:2;background:#FBFAF6;padding:8px 0}}
