@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Review ratings · Matthew Lingafelt</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/newsreader-roman.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/base.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="/js/menu.js" defer></script>
+<script src="/js/review.js" defer></script>
+<style>
+body{margin:0;background:#FBFAF6}
+a{color:#1B1916;text-decoration-color:#C9BFAE;text-underline-offset:3px}
+a:hover{color:#9B2C1F}
+.connect:hover,.connect:focus-visible{color:#FBFAF6;background:#7A2216}
+.rv{width:100%;border-collapse:collapse;font-size:15px}
+.rv th,.rv td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid #E2DCD0}
+.rv th{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9B2C1F;font-weight:500}
+.rv td.reason{max-width:420px;overflow-wrap:anywhere}
+.rv button,.btn{min-height:40px;padding:0 14px;margin:0 6px 6px 0;border:1px solid #1B1916;background:#FFFFFF;color:#1B1916;font-family:"IBM Plex Mono",monospace;font-size:12px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.rv button[aria-pressed="true"]{background:#9B2C1F;border-color:#9B2C1F;color:#FBFAF6}
+@media (max-width: 760px){.rv thead{display:none}.rv tr{display:block;border-bottom:2px solid #1B1916;padding:8px 0}.rv td{display:block;border:0;padding:4px 0}}
+</style>
+</head>
+<body>
+<a class="skip" href="#top">Skip to content</a>
+<div style="background: #FBFAF6; color: #1B1916; font-family: 'Newsreader', Georgia, serif; font-size: 17px; line-height: 1.65">
+
+  <header style="border-bottom: 1px solid #E2DCD0">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 18px 32px; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px">
+      <a href="/" style="text-decoration: none; font-size: 19px; font-weight: 500; letter-spacing: 0.06em; font-variant-caps: all-small-caps">Matthew Lingafelt</a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav"><svg width="16" height="12" viewBox="0 0 16 12" aria-hidden="true"><path d="M0 1h16M0 6h16M0 11h16" stroke="currentColor" stroke-width="1.5"/></svg><span class="menu-label">Menu</span></button>
+      <nav aria-label="Main" id="main-nav" class="main-nav" style="display: flex; flex-wrap: wrap; gap: 4px 22px; font-size: 15px; font-style: italic">
+        <a href="/" style="text-decoration: none; padding-block: 12px">Home</a>
+        <a href="/#work" style="text-decoration: none; padding-block: 12px">Work</a>
+        <a href="/current-project" style="text-decoration: none; padding-block: 12px">Current project</a>
+        <a href="/statements" style="text-decoration: none; padding-block: 12px">Statements</a>
+        <a href="/teaching" style="text-decoration: none; padding-block: 12px">Teaching</a>
+        <a href="/about" style="text-decoration: none; padding-block: 12px">About</a>
+        <a href="/cv" style="text-decoration: none; padding-block: 12px">CV</a>
+        <a href="/#contact" class="connect" style="display: inline-flex; align-items: center; align-self: center; min-height: 40px; padding: 0 16px; margin-left: 4px; background: #9B2C1F; color: #FBFAF6; text-decoration: none; font-family: 'IBM Plex Mono', monospace; font-style: normal; font-size: 12px; letter-spacing: 0.06em">Let’s connect</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 0 32px">
+      <section aria-labelledby="rv-h" style="padding: 56px 0 72px; display: flex; flex-direction: column; gap: 18px">
+        <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #9B2C1F">Rate the robots<br><span style="color: #5E584F">Private review page</span></p>
+        <h1 id="rv-h" style="margin: 0; font-weight: 500; font-size: clamp(32px, 3.6vw, 44px); line-height: 1.1">Review reasons</h1>
+        <p style="margin: 0; font-size: 18px; font-style: italic; color: #3F3A33">Approve a reason to show it on <a href="/rate">/rate</a>, or hide it. Hiding a reason keeps its rating in the average. Newest waiting reasons come first.</p>
+        <p style="margin: 0"><a class="btn" href="/api/review?format=csv">Download every rating (CSV)</a></p>
+        <p id="rv-status" role="status" style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #5E584F">Loading…</p>
+        <table class="rv" hidden>
+          <thead><tr><th scope="col">Robot</th><th scope="col">Rating</th><th scope="col">Reason</th><th scope="col">Date</th><th scope="col">Show on /rate?</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <footer style="border-top: 2px solid #1B1916">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 28px 32px 44px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 40px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F">
+      <p style="margin: 0; max-width: 520px; line-height: 1.6">Matthew Lingafelt · United Lutheran Seminary<br>This site doesn’t use cookies or trackers, and nothing here loads from anywhere else.</p>
+      <nav aria-label="Site" style="display: flex; flex-wrap: wrap; gap: 0 20px">
+          <a href="/" style="padding-block: 10px">Home</a>
+          <a href="/current-project" style="padding-block: 10px">Current project</a>
+          <a href="/cv" style="padding-block: 10px">CV</a>
+          <a href="/privacy" style="padding-block: 10px">Privacy</a>
+        </nav>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How comfortable would you be? · Rate the robots · Matthew Lingafelt</title>
+<meta name="description" content="Rate how comfortable you’d be having each of the ten companion robots from my archive in your home, from 1 to 10, and tell me why.">
+<link rel="canonical" href="https://mattlingafelt.com/rate">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Matthew Lingafelt">
+<meta property="og:url" content="https://mattlingafelt.com/rate">
+<meta property="og:title" content="How comfortable would you be? · Matthew Lingafelt">
+<meta property="og:description" content="Rate how comfortable you’d be having each of the ten companion robots from my archive in your home, from 1 to 10, and tell me why.">
+<meta property="og:image" content="https://mattlingafelt.com/images/family-watching-television-1958.jpg">
+<meta property="og:image:alt" content="A family in 1958 gathered in their living room around a television set">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/newsreader-roman.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/base.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="/js/menu.js" defer></script>
+<script src="/js/rate.js" defer></script>
+<style>
+body{margin:0;background:#FBFAF6}
+a{color:#1B1916;text-decoration-color:#C9BFAE;text-underline-offset:3px}
+a:hover{color:#9B2C1F}
+.connect:hover,.connect:focus-visible{color:#FBFAF6;background:#7A2216}
+.rate-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+@media (max-width: 760px){.rate-cards{grid-template-columns:minmax(0,1fr)}}
+.rate-card{display:flex;flex-direction:column;gap:14px;padding:22px;background:#FFFFFF;border:1px solid #E2DCD0;border-top:3px solid #9B2C1F}
+.vh,.hp{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.scale{display:flex}
+.scale label{flex:1 1 0;min-width:0;position:relative;display:flex}
+.scale input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.scale input + span{flex:1;display:flex;align-items:center;justify-content:center;min-height:44px;border:1px solid #C9BFAE;border-left-width:0;background:#FFFFFF;color:#1B1916;font-family:'IBM Plex Mono',monospace;font-size:13px}
+.scale label:first-child input + span{border-left-width:1px}
+.scale input:hover + span{border-color:#9B2C1F}
+.scale label:has(~ label input:checked) input + span{background:#F3E3DE}
+.scale input:checked + span{background:#9B2C1F;color:#FBFAF6;border-color:#9B2C1F}
+.scale input:focus-visible + span{outline:2px solid #9B2C1F;outline-offset:2px;position:relative;z-index:1}
+.send{min-height:44px;padding:0 20px;border:0;background:#9B2C1F;color:#FBFAF6;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.06em;cursor:pointer}
+.send:disabled{background:#B9B1A3;cursor:not-allowed}
+.change{align-self:flex-start;min-height:40px;padding:0;border:0;background:none;color:#1B1916;font:inherit;font-size:14px;text-decoration:underline;text-decoration-color:#C9BFAE;text-underline-offset:3px;cursor:pointer}
+[hidden]{display:none!important}
+textarea{font:inherit}
+</style>
+</head>
+<body>
+<a class="skip" href="#top">Skip to content</a>
+<div style="background: #FBFAF6; color: #1B1916; font-family: 'Newsreader', Georgia, serif; font-size: 17px; line-height: 1.65">
+
+  <header style="border-bottom: 1px solid #E2DCD0">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 18px 32px; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px">
+      <a href="/" style="text-decoration: none; font-size: 19px; font-weight: 500; letter-spacing: 0.06em; font-variant-caps: all-small-caps">Matthew Lingafelt</a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav"><svg width="16" height="12" viewBox="0 0 16 12" aria-hidden="true"><path d="M0 1h16M0 6h16M0 11h16" stroke="currentColor" stroke-width="1.5"/></svg><span class="menu-label">Menu</span></button>
+      <nav aria-label="Main" id="main-nav" class="main-nav" style="display: flex; flex-wrap: wrap; gap: 4px 22px; font-size: 15px; font-style: italic">
+        <a href="/" style="text-decoration: none; padding-block: 12px">Home</a>
+        <a href="/#work" style="text-decoration: none; padding-block: 12px">Work</a>
+        <a href="/current-project" aria-current="page" style="text-decoration: underline; text-decoration-color: #9B2C1F; text-decoration-thickness: 2px; padding-block: 12px">Current project</a>
+        <a href="/statements" style="text-decoration: none; padding-block: 12px">Statements</a>
+        <a href="/teaching" style="text-decoration: none; padding-block: 12px">Teaching</a>
+        <a href="/about" style="text-decoration: none; padding-block: 12px">About</a>
+        <a href="/cv" style="text-decoration: none; padding-block: 12px">CV</a>
+        <a href="/#contact" class="connect" style="display: inline-flex; align-items: center; align-self: center; min-height: 40px; padding: 0 16px; margin-left: 4px; background: #9B2C1F; color: #FBFAF6; text-decoration: none; font-family: 'IBM Plex Mono', monospace; font-style: normal; font-size: 12px; letter-spacing: 0.06em">Let’s connect</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 0 32px">
+
+      <section aria-labelledby="rt-h" style="padding: 56px 0 40px; display: flex; flex-wrap: wrap; gap: 16px 36px">
+        <p style="margin: 0; flex: 0 0 190px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #9B2C1F; padding-top: 14px"><a href="/current-project" style="color: inherit; text-decoration: none">Current project</a><br><span style="color: #5E584F">Rate the robots</span></p>
+        <div style="flex: 1 1 600px; min-width: 0; max-width: 760px; display: flex; flex-direction: column; gap: 16px">
+          <h1 id="rt-h" style="margin: 0; font-weight: 500; font-size: clamp(36px, 4vw, 52px); line-height: 1.08; letter-spacing: -0.01em">How comfortable would you be?</h1>
+          <p style="margin: 0; font-size: 20px; font-style: italic; color: #3F3A33">Here are the ten companion robots from my archive, <a href="https://whoagreed.hcommons.org">Who Agreed?</a> Rate how comfortable you’d be having each one in your home, from 1 to 10, and tell me why in one to three sentences. Rate as many or as few as you like.</p>
+          <noscript><p style="margin: 0; font-weight: 600">Sending a rating needs JavaScript turned on.</p></noscript>
+        </div>
+      </section>
+
+      <section aria-labelledby="pv-h" style="padding: 28px 32px; margin-bottom: 48px; background: #F3EEE4; border: 1px solid #E2DCD0">
+        <h2 id="pv-h" style="margin: 0 0 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #9B2C1F">What I collect, and what I don’t</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px 32px; font-size: 16px">
+          <div>
+            <p style="margin: 0 0 6px; font-weight: 600">What I collect</p>
+            <ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px">
+              <li>The rating you pick, 1 to 10, for each robot you rate</li>
+              <li>Your reason, one to three sentences, if you write one</li>
+              <li>The date you sent it</li>
+            </ul>
+          </div>
+          <div>
+            <p style="margin: 0 0 6px; font-weight: 600">What I don’t collect</p>
+            <ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px">
+              <li>Your name, email, or any account</li>
+              <li>Cookies or trackers of any kind</li>
+              <li>Your IP address. It isn’t saved with your answer.</li>
+            </ul>
+          </div>
+          <div>
+            <p style="margin: 0 0 6px; font-weight: 600">What happens to it</p>
+            <ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px">
+              <li>Each robot’s average shows on this page for everyone</li>
+              <li>I read every reason before any of it appears here</li>
+              <li>I may quote reasons on this site, without names</li>
+            </ul>
+          </div>
+        </div>
+        <p style="margin: 16px 0 0; font-size: 14px; font-style: italic; color: #5E584F">More detail is on the <a href="/privacy#ratings">privacy page</a>.</p>
+      </section>
+
+      <section aria-label="The robots" class="rate-cards" style="padding-bottom: 72px">
+
+        <article id="cba-01" class="rate-card" data-name="Enabot EBO">
+          <div style="display: flex; gap: 18px; align-items: flex-start">
+            <figure style="margin: 0; flex: none; width: 132px; display: flex; flex-direction: column; gap: 4px">
+              <img src="/images/robots/cba-01.jpg" alt="Enabot EBO, a companion robot" width="132" height="132" loading="lazy" style="display: block; width: 132px; height: 132px; object-fit: cover; background: #F3EEE4">
+              <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 9px; line-height: 1.4; color: #5E584F">Photo: Rob Pegoraro, CC BY-NC-SA 2.0</figcaption>
+            </figure>
+            <div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #9B2C1F">CBA-01 · Enabot</span>
+              <h2 id="cba-01-h" style="margin: 0; font-size: 26px; font-weight: 500; line-height: 1.15">Enabot EBO</h2>
+              <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3F3A33">A camera on wheels that the owner drives around the house from somewhere else, to check on family and pets.</p>
+              <a href="https://whoagreed.hcommons.org/collection/cba-01-enabot-ebo/" style="align-self: flex-start; font-size: 14px; font-style: italic; padding-block: 4px">Read the record ↗</a>
+            </div>
+          </div>
+          <dl style="margin: 0; display: flex; flex-direction: column; gap: 6px; padding: 12px 0; border-top: 1px solid #E2DCD0; border-bottom: 1px solid #E2DCD0; font-size: 14px; line-height: 1.45">
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Senses</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">A 4K camera, four microphones, a distance sensor for obstacles, and infrared for docking. It maps the house with its camera.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Collects</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">Live video and audio for the owner watching from somewhere else.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Processed</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">Streams over Wi-Fi to the owner’s app. Its voice assistant runs on GPT-4o mini, a cloud AI model.</dd>
+            </div>
+          </dl>
+          <div class="result" aria-live="polite" style="font-size: 14px; line-height: 1.5; color: #3F3A33">
+            <p class="avg" style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F"></p>
+            <ul class="said" hidden style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-style: italic"></ul>
+          </div>
+          <form class="rate-form" data-robot="01" style="display: flex; flex-direction: column; gap: 14px">
+            <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+              <legend style="padding: 0; margin-bottom: 8px; font-size: 16px; font-weight: 600">How comfortable would you be having Enabot EBO in your home?</legend>
+              <div class="scale">
+                <label><input type="radio" name="rating" value="1" required><span>1<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="2" required><span>2<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="3" required><span>3<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="4" required><span>4<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="5" required><span>5<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="6" required><span>6<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="7" required><span>7<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="8" required><span>8<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="9" required><span>9<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="10" required><span>10<span class="vh"> out of 10</span></span></label>
+              </div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">
+                <span>1 · Not at all comfortable</span><span style="text-align: right">10 · Completely comfortable</span>
+              </div>
+            </fieldset>
+            <label style="display: flex; flex-direction: column; gap: 6px">
+              <span style="font-size: 15px; font-weight: 600">Why? <span style="font-weight: 400; font-style: italic; color: #5E584F">One to three sentences, optional.</span></span>
+              <textarea name="reason" rows="3" maxlength="400" placeholder="What would make you comfortable, or not?" style="resize: vertical; padding: 10px 12px; border: 1px solid #C9BFAE; background: #FBFAF6; color: #1B1916; font-size: 16px; line-height: 1.5"></textarea>
+              <span class="count" aria-hidden="true" style="align-self: flex-end; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">0 / 400</span>
+            </label>
+            <label class="hp">Leave this box empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px">
+              <button type="submit" class="send" disabled>Send my rating</button>
+              <span class="hint" role="status" style="font-size: 14px; font-style: italic; color: #5E584F">Pick a number to send your rating.</span>
+            </div>
+          </form>
+          <div class="thanks" role="status" tabindex="-1" hidden style="display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #F3EEE4; border: 1px solid #E2DCD0">
+            <p style="margin: 0; font-size: 17px"><strong style="font-weight: 600; color: #9B2C1F">Thank you.</strong> <span class="thanks-text"></span></p>
+            <p class="thanks-note" style="margin: 0; font-size: 14px; font-style: italic; color: #5E584F"></p>
+            <button type="button" class="change">Change my answer</button>
+          </div>
+        </article>
+
+        <article id="cba-02" class="rate-card" data-name="Miko 3">
+          <div style="display: flex; gap: 18px; align-items: flex-start">
+            <figure style="margin: 0; flex: none; width: 132px; display: flex; flex-direction: column; gap: 4px">
+              <img src="/images/robots/cba-02.jpg" alt="Miko 3, a companion robot" width="132" height="132" loading="lazy" style="display: block; width: 132px; height: 132px; object-fit: cover; background: #F3EEE4">
+              <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 9px; line-height: 1.4; color: #5E584F">Image: Miko, product image</figcaption>
+            </figure>
+            <div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #9B2C1F">CBA-02 · Miko</span>
+              <h2 id="cba-02-h" style="margin: 0; font-size: 26px; font-weight: 500; line-height: 1.15">Miko 3</h2>
+              <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3F3A33">Marketed to kids ages 5 to 10 and certified under a COPPA safe-harbor seal.</p>
+              <a href="https://whoagreed.hcommons.org/collection/cba-02-miko-3/" style="align-self: flex-start; font-size: 14px; font-style: italic; padding-block: 4px">Read the record ↗</a>
+            </div>
+          </div>
+          <dl style="margin: 0; display: flex; flex-direction: column; gap: 6px; padding: 12px 0; border-top: 1px solid #E2DCD0; border-bottom: 1px solid #E2DCD0; font-size: 14px; line-height: 1.45">
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Senses</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">An HD camera, two microphones, a touchscreen face, and edge, obstacle, and distance sensors.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Collects</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">A child’s voice and conversations. Its policy mentions emotional states and keeping biometric data up to three years.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Processed</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">Miko’s servers. Senators alleged its replies to children were left open to the public; Miko denies a breach.</dd>
+            </div>
+          </dl>
+          <div class="result" aria-live="polite" style="font-size: 14px; line-height: 1.5; color: #3F3A33">
+            <p class="avg" style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F"></p>
+            <ul class="said" hidden style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-style: italic"></ul>
+          </div>
+          <form class="rate-form" data-robot="02" style="display: flex; flex-direction: column; gap: 14px">
+            <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+              <legend style="padding: 0; margin-bottom: 8px; font-size: 16px; font-weight: 600">How comfortable would you be having Miko 3 in your home?</legend>
+              <div class="scale">
+                <label><input type="radio" name="rating" value="1" required><span>1<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="2" required><span>2<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="3" required><span>3<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="4" required><span>4<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="5" required><span>5<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="6" required><span>6<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="7" required><span>7<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="8" required><span>8<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="9" required><span>9<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="10" required><span>10<span class="vh"> out of 10</span></span></label>
+              </div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">
+                <span>1 · Not at all comfortable</span><span style="text-align: right">10 · Completely comfortable</span>
+              </div>
+            </fieldset>
+            <label style="display: flex; flex-direction: column; gap: 6px">
+              <span style="font-size: 15px; font-weight: 600">Why? <span style="font-weight: 400; font-style: italic; color: #5E584F">One to three sentences, optional.</span></span>
+              <textarea name="reason" rows="3" maxlength="400" placeholder="What would make you comfortable, or not?" style="resize: vertical; padding: 10px 12px; border: 1px solid #C9BFAE; background: #FBFAF6; color: #1B1916; font-size: 16px; line-height: 1.5"></textarea>
+              <span class="count" aria-hidden="true" style="align-self: flex-end; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">0 / 400</span>
+            </label>
+            <label class="hp">Leave this box empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px">
+              <button type="submit" class="send" disabled>Send my rating</button>
+              <span class="hint" role="status" style="font-size: 14px; font-style: italic; color: #5E584F">Pick a number to send your rating.</span>
+            </div>
+          </form>
+          <div class="thanks" role="status" tabindex="-1" hidden style="display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #F3EEE4; border: 1px solid #E2DCD0">
+            <p style="margin: 0; font-size: 17px"><strong style="font-weight: 600; color: #9B2C1F">Thank you.</strong> <span class="thanks-text"></span></p>
+            <p class="thanks-note" style="margin: 0; font-size: 14px; font-style: italic; color: #5E584F"></p>
+            <button type="button" class="change">Change my answer</button>
+          </div>
+        </article>
+
+        <article id="cba-03" class="rate-card" data-name="Loona">
+          <div style="display: flex; gap: 18px; align-items: flex-start">
+            <figure style="margin: 0; flex: none; width: 132px; display: flex; flex-direction: column; gap: 4px">
+              <img src="/images/robots/cba-03.jpg" alt="Loona, a companion robot" width="132" height="132" loading="lazy" style="display: block; width: 132px; height: 132px; object-fit: cover; background: #F3EEE4">
+              <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 9px; line-height: 1.4; color: #5E584F">Image: KEYi Technology, product image</figcaption>
+            </figure>
+            <div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #9B2C1F">CBA-03 · KEYi Technology</span>
+              <h2 id="cba-03-h" style="margin: 0; font-size: 26px; font-weight: 500; line-height: 1.15">Loona</h2>
+              <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3F3A33">A petbot with a camera, marketed to families. Owners can see through its camera from their phones.</p>
+              <a href="https://whoagreed.hcommons.org/collection/cba-03-loona/" style="align-self: flex-start; font-size: 14px; font-style: italic; padding-block: 4px">Read the record ↗</a>
+            </div>
+          </div>
+          <dl style="margin: 0; display: flex; flex-direction: column; gap: 6px; padding: 12px 0; border-top: 1px solid #E2DCD0; border-bottom: 1px solid #E2DCD0; font-size: 14px; line-height: 1.45">
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Senses</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">A 720p camera, four microphones, a 3D depth sensor, and touch and motion sensors.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Collects</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">Enrolled faces, and live video for owners watching from their phones.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Processed</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">Faces stay on the robot. Live video streams to the app, directly or through a server, without being stored, per KEYi.</dd>
+            </div>
+          </dl>
+          <div class="result" aria-live="polite" style="font-size: 14px; line-height: 1.5; color: #3F3A33">
+            <p class="avg" style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F"></p>
+            <ul class="said" hidden style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-style: italic"></ul>
+          </div>
+          <form class="rate-form" data-robot="03" style="display: flex; flex-direction: column; gap: 14px">
+            <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+              <legend style="padding: 0; margin-bottom: 8px; font-size: 16px; font-weight: 600">How comfortable would you be having Loona in your home?</legend>
+              <div class="scale">
+                <label><input type="radio" name="rating" value="1" required><span>1<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="2" required><span>2<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="3" required><span>3<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="4" required><span>4<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="5" required><span>5<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="6" required><span>6<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="7" required><span>7<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="8" required><span>8<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="9" required><span>9<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="10" required><span>10<span class="vh"> out of 10</span></span></label>
+              </div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">
+                <span>1 · Not at all comfortable</span><span style="text-align: right">10 · Completely comfortable</span>
+              </div>
+            </fieldset>
+            <label style="display: flex; flex-direction: column; gap: 6px">
+              <span style="font-size: 15px; font-weight: 600">Why? <span style="font-weight: 400; font-style: italic; color: #5E584F">One to three sentences, optional.</span></span>
+              <textarea name="reason" rows="3" maxlength="400" placeholder="What would make you comfortable, or not?" style="resize: vertical; padding: 10px 12px; border: 1px solid #C9BFAE; background: #FBFAF6; color: #1B1916; font-size: 16px; line-height: 1.5"></textarea>
+              <span class="count" aria-hidden="true" style="align-self: flex-end; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">0 / 400</span>
+            </label>
+            <label class="hp">Leave this box empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px">
+              <button type="submit" class="send" disabled>Send my rating</button>
+              <span class="hint" role="status" style="font-size: 14px; font-style: italic; color: #5E584F">Pick a number to send your rating.</span>
+            </div>
+          </form>
+          <div class="thanks" role="status" tabindex="-1" hidden style="display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #F3EEE4; border: 1px solid #E2DCD0">
+            <p style="margin: 0; font-size: 17px"><strong style="font-weight: 600; color: #9B2C1F">Thank you.</strong> <span class="thanks-text"></span></p>
+            <p class="thanks-note" style="margin: 0; font-size: 14px; font-style: italic; color: #5E584F"></p>
+            <button type="button" class="change">Change my answer</button>
+          </div>
+        </article>
+
+        <article id="cba-04" class="rate-card" data-name="Sony aibo">
+          <div style="display: flex; gap: 18px; align-items: flex-start">
+            <figure style="margin: 0; flex: none; width: 132px; display: flex; flex-direction: column; gap: 4px">
+              <img src="/images/robots/cba-04.jpg" alt="Sony aibo, a companion robot" width="132" height="132" loading="lazy" style="display: block; width: 132px; height: 132px; object-fit: cover; background: #F3EEE4">
+              <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 9px; line-height: 1.4; color: #5E584F">Photo: KKPCW, CC BY-SA 4.0</figcaption>
+            </figure>
+            <div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #9B2C1F">CBA-04 · Sony</span>
+              <h2 id="cba-04-h" style="margin: 0; font-size: 26px; font-weight: 500; line-height: 1.15">Sony aibo</h2>
+              <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3F3A33">Sony has said aibo can learn up to 100 faces, so anyone it sees regularly gets enrolled.</p>
+              <a href="https://whoagreed.hcommons.org/collection/cba-04-sony-aibo/" style="align-self: flex-start; font-size: 14px; font-style: italic; padding-block: 4px">Read the record ↗</a>
+            </div>
+          </div>
+          <dl style="margin: 0; display: flex; flex-direction: column; gap: 6px; padding: 12px 0; border-top: 1px solid #E2DCD0; border-bottom: 1px solid #E2DCD0; font-size: 14px; line-height: 1.45">
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Senses</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">Two cameras, four microphones, distance, motion, and light sensors, and touch sensors on its head, jaw, back, and paw pads.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Collects</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">The faces of up to 100 people it meets regularly, which Sony treats as possible biometric data.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Processed</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">On the robot and through Sony’s aibo cloud service.</dd>
+            </div>
+          </dl>
+          <div class="result" aria-live="polite" style="font-size: 14px; line-height: 1.5; color: #3F3A33">
+            <p class="avg" style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F"></p>
+            <ul class="said" hidden style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-style: italic"></ul>
+          </div>
+          <form class="rate-form" data-robot="04" style="display: flex; flex-direction: column; gap: 14px">
+            <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+              <legend style="padding: 0; margin-bottom: 8px; font-size: 16px; font-weight: 600">How comfortable would you be having Sony aibo in your home?</legend>
+              <div class="scale">
+                <label><input type="radio" name="rating" value="1" required><span>1<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="2" required><span>2<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="3" required><span>3<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="4" required><span>4<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="5" required><span>5<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="6" required><span>6<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="7" required><span>7<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="8" required><span>8<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="9" required><span>9<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="10" required><span>10<span class="vh"> out of 10</span></span></label>
+              </div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">
+                <span>1 · Not at all comfortable</span><span style="text-align: right">10 · Completely comfortable</span>
+              </div>
+            </fieldset>
+            <label style="display: flex; flex-direction: column; gap: 6px">
+              <span style="font-size: 15px; font-weight: 600">Why? <span style="font-weight: 400; font-style: italic; color: #5E584F">One to three sentences, optional.</span></span>
+              <textarea name="reason" rows="3" maxlength="400" placeholder="What would make you comfortable, or not?" style="resize: vertical; padding: 10px 12px; border: 1px solid #C9BFAE; background: #FBFAF6; color: #1B1916; font-size: 16px; line-height: 1.5"></textarea>
+              <span class="count" aria-hidden="true" style="align-self: flex-end; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">0 / 400</span>
+            </label>
+            <label class="hp">Leave this box empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px">
+              <button type="submit" class="send" disabled>Send my rating</button>
+              <span class="hint" role="status" style="font-size: 14px; font-style: italic; color: #5E584F">Pick a number to send your rating.</span>
+            </div>
+          </form>
+          <div class="thanks" role="status" tabindex="-1" hidden style="display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #F3EEE4; border: 1px solid #E2DCD0">
+            <p style="margin: 0; font-size: 17px"><strong style="font-weight: 600; color: #9B2C1F">Thank you.</strong> <span class="thanks-text"></span></p>
+            <p class="thanks-note" style="margin: 0; font-size: 14px; font-style: italic; color: #5E584F"></p>
+            <button type="button" class="change">Change my answer</button>
+          </div>
+        </article>
+
+        <article id="cba-05" class="rate-card" data-name="Casio Moflin">
+          <div style="display: flex; gap: 18px; align-items: flex-start">
+            <figure style="margin: 0; flex: none; width: 132px; display: flex; flex-direction: column; gap: 4px">
+              <img src="/images/robots/cba-05.jpg" alt="Casio Moflin, a companion robot" width="132" height="132" loading="lazy" style="display: block; width: 132px; height: 132px; object-fit: cover; background: #F3EEE4">
+              <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 9px; line-height: 1.4; color: #5E584F">Photo: Kyu3a, CC BY-SA 4.0</figcaption>
+            </figure>
+            <div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #9B2C1F">CBA-05 · Casio</span>
+              <h2 id="cba-05-h" style="margin: 0; font-size: 26px; font-weight: 500; line-height: 1.15">Casio Moflin</h2>
+              <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3F3A33">No camera, but it uses its microphone to learn its owner’s voice.</p>
+              <a href="https://whoagreed.hcommons.org/collection/cba-05-casio-moflin/" style="align-self: flex-start; font-size: 14px; font-style: italic; padding-block: 4px">Read the record ↗</a>
+            </div>
+          </div>
+          <dl style="margin: 0; display: flex; flex-direction: column; gap: 6px; padding: 12px 0; border-top: 1px solid #E2DCD0; border-bottom: 1px solid #E2DCD0; font-size: 14px; line-height: 1.45">
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Senses</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">One microphone, touch sensors, and light, temperature, and motion sensors. No camera.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Collects</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">Touch counts and its owner’s voice, reduced to data points.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Processed</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">On the robot. Nothing leaves unless the owner uploads it through the app.</dd>
+            </div>
+          </dl>
+          <div class="result" aria-live="polite" style="font-size: 14px; line-height: 1.5; color: #3F3A33">
+            <p class="avg" style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F"></p>
+            <ul class="said" hidden style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-style: italic"></ul>
+          </div>
+          <form class="rate-form" data-robot="05" style="display: flex; flex-direction: column; gap: 14px">
+            <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+              <legend style="padding: 0; margin-bottom: 8px; font-size: 16px; font-weight: 600">How comfortable would you be having Casio Moflin in your home?</legend>
+              <div class="scale">
+                <label><input type="radio" name="rating" value="1" required><span>1<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="2" required><span>2<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="3" required><span>3<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="4" required><span>4<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="5" required><span>5<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="6" required><span>6<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="7" required><span>7<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="8" required><span>8<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="9" required><span>9<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="10" required><span>10<span class="vh"> out of 10</span></span></label>
+              </div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">
+                <span>1 · Not at all comfortable</span><span style="text-align: right">10 · Completely comfortable</span>
+              </div>
+            </fieldset>
+            <label style="display: flex; flex-direction: column; gap: 6px">
+              <span style="font-size: 15px; font-weight: 600">Why? <span style="font-weight: 400; font-style: italic; color: #5E584F">One to three sentences, optional.</span></span>
+              <textarea name="reason" rows="3" maxlength="400" placeholder="What would make you comfortable, or not?" style="resize: vertical; padding: 10px 12px; border: 1px solid #C9BFAE; background: #FBFAF6; color: #1B1916; font-size: 16px; line-height: 1.5"></textarea>
+              <span class="count" aria-hidden="true" style="align-self: flex-end; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">0 / 400</span>
+            </label>
+            <label class="hp">Leave this box empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px">
+              <button type="submit" class="send" disabled>Send my rating</button>
+              <span class="hint" role="status" style="font-size: 14px; font-style: italic; color: #5E584F">Pick a number to send your rating.</span>
+            </div>
+          </form>
+          <div class="thanks" role="status" tabindex="-1" hidden style="display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #F3EEE4; border: 1px solid #E2DCD0">
+            <p style="margin: 0; font-size: 17px"><strong style="font-weight: 600; color: #9B2C1F">Thank you.</strong> <span class="thanks-text"></span></p>
+            <p class="thanks-note" style="margin: 0; font-size: 14px; font-style: italic; color: #5E584F"></p>
+            <button type="button" class="change">Change my answer</button>
+          </div>
+        </article>
+
+        <article id="cba-06" class="rate-card" data-name="Ropet">
+          <div style="display: flex; gap: 18px; align-items: flex-start">
+            <figure style="margin: 0; flex: none; width: 132px; display: flex; flex-direction: column; gap: 4px">
+              <img src="/images/robots/cba-06.jpg" alt="Ropet, a companion robot" width="132" height="132" loading="lazy" style="display: block; width: 132px; height: 132px; object-fit: cover; background: #F3EEE4">
+              <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 9px; line-height: 1.4; color: #5E584F">Image: ROPET LIMITED, product image</figcaption>
+            </figure>
+            <div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #9B2C1F">CBA-06 · ROPET</span>
+              <h2 id="cba-06-h" style="margin: 0; font-size: 26px; font-weight: 500; line-height: 1.15">Ropet</h2>
+              <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3F3A33">Its policy makes the buyer responsible for explaining the camera and cloud AI to everyone else.</p>
+              <a href="https://whoagreed.hcommons.org/collection/cba-06-ropet/" style="align-self: flex-start; font-size: 14px; font-style: italic; padding-block: 4px">Read the record ↗</a>
+            </div>
+          </div>
+          <dl style="margin: 0; display: flex; flex-direction: column; gap: 6px; padding: 12px 0; border-top: 1px solid #E2DCD0; border-bottom: 1px solid #E2DCD0; font-size: 14px; line-height: 1.45">
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Senses</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">Ropet publishes no spec sheet. Press reports a camera in its nose, a microphone, touch sensing, and a body-temperature sensor.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Collects</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">Faces, voices, and gestures it responds to. Its App Store label says it collects no data.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Processed</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">App features need the internet, and its policy covers cloud AI.</dd>
+            </div>
+          </dl>
+          <div class="result" aria-live="polite" style="font-size: 14px; line-height: 1.5; color: #3F3A33">
+            <p class="avg" style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F"></p>
+            <ul class="said" hidden style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-style: italic"></ul>
+          </div>
+          <form class="rate-form" data-robot="06" style="display: flex; flex-direction: column; gap: 14px">
+            <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+              <legend style="padding: 0; margin-bottom: 8px; font-size: 16px; font-weight: 600">How comfortable would you be having Ropet in your home?</legend>
+              <div class="scale">
+                <label><input type="radio" name="rating" value="1" required><span>1<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="2" required><span>2<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="3" required><span>3<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="4" required><span>4<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="5" required><span>5<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="6" required><span>6<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="7" required><span>7<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="8" required><span>8<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="9" required><span>9<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="10" required><span>10<span class="vh"> out of 10</span></span></label>
+              </div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">
+                <span>1 · Not at all comfortable</span><span style="text-align: right">10 · Completely comfortable</span>
+              </div>
+            </fieldset>
+            <label style="display: flex; flex-direction: column; gap: 6px">
+              <span style="font-size: 15px; font-weight: 600">Why? <span style="font-weight: 400; font-style: italic; color: #5E584F">One to three sentences, optional.</span></span>
+              <textarea name="reason" rows="3" maxlength="400" placeholder="What would make you comfortable, or not?" style="resize: vertical; padding: 10px 12px; border: 1px solid #C9BFAE; background: #FBFAF6; color: #1B1916; font-size: 16px; line-height: 1.5"></textarea>
+              <span class="count" aria-hidden="true" style="align-self: flex-end; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">0 / 400</span>
+            </label>
+            <label class="hp">Leave this box empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px">
+              <button type="submit" class="send" disabled>Send my rating</button>
+              <span class="hint" role="status" style="font-size: 14px; font-style: italic; color: #5E584F">Pick a number to send your rating.</span>
+            </div>
+          </form>
+          <div class="thanks" role="status" tabindex="-1" hidden style="display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #F3EEE4; border: 1px solid #E2DCD0">
+            <p style="margin: 0; font-size: 17px"><strong style="font-weight: 600; color: #9B2C1F">Thank you.</strong> <span class="thanks-text"></span></p>
+            <p class="thanks-note" style="margin: 0; font-size: 14px; font-style: italic; color: #5E584F"></p>
+            <button type="button" class="change">Change my answer</button>
+          </div>
+        </article>
+
+        <article id="cba-07" class="rate-card" data-name="Eilik">
+          <div style="display: flex; gap: 18px; align-items: flex-start">
+            <figure style="margin: 0; flex: none; width: 132px; display: flex; flex-direction: column; gap: 4px">
+              <img src="/images/robots/cba-07.jpg" alt="Eilik, a companion robot" width="132" height="132" loading="lazy" style="display: block; width: 132px; height: 132px; object-fit: cover; background: #F3EEE4">
+              <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 9px; line-height: 1.4; color: #5E584F">Image: EnergizeLab, product image</figcaption>
+            </figure>
+            <div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #9B2C1F">CBA-07 · EnergizeLab</span>
+              <h2 id="cba-07-h" style="margin: 0; font-size: 26px; font-weight: 500; line-height: 1.15">Eilik</h2>
+              <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3F3A33">The base robot has no camera, but it has a microphone EnergizeLab never explains.</p>
+              <a href="https://whoagreed.hcommons.org/collection/cba-07-eilik/" style="align-self: flex-start; font-size: 14px; font-style: italic; padding-block: 4px">Read the record ↗</a>
+            </div>
+          </div>
+          <dl style="margin: 0; display: flex; flex-direction: column; gap: 6px; padding: 12px 0; border-top: 1px solid #E2DCD0; border-bottom: 1px solid #E2DCD0; font-size: 14px; line-height: 1.45">
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Senses</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">A microphone, touch, shock, and infrared sensors. A camera only with the AI Station add-on.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Collects</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">With the add-on, camera data to recognize its owner and voice recordings.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Processed</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">The base robot works offline. The add-on sends voice to cloud partners like Alibaba Cloud.</dd>
+            </div>
+          </dl>
+          <div class="result" aria-live="polite" style="font-size: 14px; line-height: 1.5; color: #3F3A33">
+            <p class="avg" style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F"></p>
+            <ul class="said" hidden style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-style: italic"></ul>
+          </div>
+          <form class="rate-form" data-robot="07" style="display: flex; flex-direction: column; gap: 14px">
+            <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+              <legend style="padding: 0; margin-bottom: 8px; font-size: 16px; font-weight: 600">How comfortable would you be having Eilik in your home?</legend>
+              <div class="scale">
+                <label><input type="radio" name="rating" value="1" required><span>1<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="2" required><span>2<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="3" required><span>3<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="4" required><span>4<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="5" required><span>5<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="6" required><span>6<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="7" required><span>7<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="8" required><span>8<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="9" required><span>9<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="10" required><span>10<span class="vh"> out of 10</span></span></label>
+              </div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">
+                <span>1 · Not at all comfortable</span><span style="text-align: right">10 · Completely comfortable</span>
+              </div>
+            </fieldset>
+            <label style="display: flex; flex-direction: column; gap: 6px">
+              <span style="font-size: 15px; font-weight: 600">Why? <span style="font-weight: 400; font-style: italic; color: #5E584F">One to three sentences, optional.</span></span>
+              <textarea name="reason" rows="3" maxlength="400" placeholder="What would make you comfortable, or not?" style="resize: vertical; padding: 10px 12px; border: 1px solid #C9BFAE; background: #FBFAF6; color: #1B1916; font-size: 16px; line-height: 1.5"></textarea>
+              <span class="count" aria-hidden="true" style="align-self: flex-end; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">0 / 400</span>
+            </label>
+            <label class="hp">Leave this box empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px">
+              <button type="submit" class="send" disabled>Send my rating</button>
+              <span class="hint" role="status" style="font-size: 14px; font-style: italic; color: #5E584F">Pick a number to send your rating.</span>
+            </div>
+          </form>
+          <div class="thanks" role="status" tabindex="-1" hidden style="display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #F3EEE4; border: 1px solid #E2DCD0">
+            <p style="margin: 0; font-size: 17px"><strong style="font-weight: 600; color: #9B2C1F">Thank you.</strong> <span class="thanks-text"></span></p>
+            <p class="thanks-note" style="margin: 0; font-size: 14px; font-style: italic; color: #5E584F"></p>
+            <button type="button" class="change">Change my answer</button>
+          </div>
+        </article>
+
+        <article id="cba-08" class="rate-card" data-name="EMO">
+          <div style="display: flex; gap: 18px; align-items: flex-start">
+            <figure style="margin: 0; flex: none; width: 132px; display: flex; flex-direction: column; gap: 4px">
+              <img src="/images/robots/cba-08.jpg" alt="EMO, a companion robot" width="132" height="132" loading="lazy" style="display: block; width: 132px; height: 132px; object-fit: cover; background: #F3EEE4">
+              <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 9px; line-height: 1.4; color: #5E584F">Image: LivingAI, product image</figcaption>
+            </figure>
+            <div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #9B2C1F">CBA-08 · LivingAI</span>
+              <h2 id="cba-08-h" style="margin: 0; font-size: 26px; font-weight: 500; line-height: 1.15">EMO</h2>
+              <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3F3A33">EMO answers spoken questions and recognizes faces. LivingAI’s privacy notice, last updated in 2022, says it collects no audio, video, or biometric data.</p>
+              <a href="https://whoagreed.hcommons.org/collection/cba-08-emo/" style="align-self: flex-start; font-size: 14px; font-style: italic; padding-block: 4px">Read the record ↗</a>
+            </div>
+          </div>
+          <dl style="margin: 0; display: flex; flex-direction: column; gap: 6px; padding: 12px 0; border-top: 1px solid #E2DCD0; border-bottom: 1px solid #E2DCD0; font-size: 14px; line-height: 1.45">
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Senses</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">An HD camera with face recognition, four microphones, a touch sensor on its head, and more than 10 internal sensors.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Collects</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">Faces of up to 10 people, per LivingAI’s product page. Its privacy notice lists only device location as collected.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Processed</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">LivingAI says a built-in processor handles images and sound. It doesn’t say where spoken questions are answered.</dd>
+            </div>
+          </dl>
+          <div class="result" aria-live="polite" style="font-size: 14px; line-height: 1.5; color: #3F3A33">
+            <p class="avg" style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F"></p>
+            <ul class="said" hidden style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-style: italic"></ul>
+          </div>
+          <form class="rate-form" data-robot="08" style="display: flex; flex-direction: column; gap: 14px">
+            <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+              <legend style="padding: 0; margin-bottom: 8px; font-size: 16px; font-weight: 600">How comfortable would you be having EMO in your home?</legend>
+              <div class="scale">
+                <label><input type="radio" name="rating" value="1" required><span>1<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="2" required><span>2<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="3" required><span>3<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="4" required><span>4<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="5" required><span>5<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="6" required><span>6<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="7" required><span>7<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="8" required><span>8<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="9" required><span>9<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="10" required><span>10<span class="vh"> out of 10</span></span></label>
+              </div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">
+                <span>1 · Not at all comfortable</span><span style="text-align: right">10 · Completely comfortable</span>
+              </div>
+            </fieldset>
+            <label style="display: flex; flex-direction: column; gap: 6px">
+              <span style="font-size: 15px; font-weight: 600">Why? <span style="font-weight: 400; font-style: italic; color: #5E584F">One to three sentences, optional.</span></span>
+              <textarea name="reason" rows="3" maxlength="400" placeholder="What would make you comfortable, or not?" style="resize: vertical; padding: 10px 12px; border: 1px solid #C9BFAE; background: #FBFAF6; color: #1B1916; font-size: 16px; line-height: 1.5"></textarea>
+              <span class="count" aria-hidden="true" style="align-self: flex-end; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">0 / 400</span>
+            </label>
+            <label class="hp">Leave this box empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px">
+              <button type="submit" class="send" disabled>Send my rating</button>
+              <span class="hint" role="status" style="font-size: 14px; font-style: italic; color: #5E584F">Pick a number to send your rating.</span>
+            </div>
+          </form>
+          <div class="thanks" role="status" tabindex="-1" hidden style="display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #F3EEE4; border: 1px solid #E2DCD0">
+            <p style="margin: 0; font-size: 17px"><strong style="font-weight: 600; color: #9B2C1F">Thank you.</strong> <span class="thanks-text"></span></p>
+            <p class="thanks-note" style="margin: 0; font-size: 14px; font-style: italic; color: #5E584F"></p>
+            <button type="button" class="change">Change my answer</button>
+          </div>
+        </article>
+
+        <article id="cba-09" class="rate-card" data-name="Reachy Mini">
+          <div style="display: flex; gap: 18px; align-items: flex-start">
+            <figure style="margin: 0; flex: none; width: 132px; display: flex; flex-direction: column; gap: 4px">
+              <img src="/images/robots/cba-09.jpg" alt="Reachy Mini, a companion robot" width="132" height="132" loading="lazy" style="display: block; width: 132px; height: 132px; object-fit: cover; background: #F3EEE4">
+              <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 9px; line-height: 1.4; color: #5E584F">Image: Pollen Robotics, product render</figcaption>
+            </figure>
+            <div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #9B2C1F">CBA-09 · Pollen Robotics</span>
+              <h2 id="cba-09-h" style="margin: 0; font-size: 26px; font-weight: 500; line-height: 1.15">Reachy Mini</h2>
+              <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3F3A33">There’s no privacy policy for the robot itself. Once someone installs an app, that app’s rules take over.</p>
+              <a href="https://whoagreed.hcommons.org/collection/cba-09-reachy-mini/" style="align-self: flex-start; font-size: 14px; font-style: italic; padding-block: 4px">Read the record ↗</a>
+            </div>
+          </div>
+          <dl style="margin: 0; display: flex; flex-direction: column; gap: 6px; padding: 12px 0; border-top: 1px solid #E2DCD0; border-bottom: 1px solid #E2DCD0; font-size: 14px; line-height: 1.45">
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Senses</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">A 12MP wide-angle camera and four microphones. The wireless version adds a motion sensor.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Collects</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">Nothing by default, per Hugging Face. Apps someone installs can collect more.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Processed</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">On the robot by default. Some apps send audio to outside AI services like OpenAI.</dd>
+            </div>
+          </dl>
+          <div class="result" aria-live="polite" style="font-size: 14px; line-height: 1.5; color: #3F3A33">
+            <p class="avg" style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F"></p>
+            <ul class="said" hidden style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-style: italic"></ul>
+          </div>
+          <form class="rate-form" data-robot="09" style="display: flex; flex-direction: column; gap: 14px">
+            <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+              <legend style="padding: 0; margin-bottom: 8px; font-size: 16px; font-weight: 600">How comfortable would you be having Reachy Mini in your home?</legend>
+              <div class="scale">
+                <label><input type="radio" name="rating" value="1" required><span>1<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="2" required><span>2<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="3" required><span>3<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="4" required><span>4<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="5" required><span>5<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="6" required><span>6<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="7" required><span>7<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="8" required><span>8<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="9" required><span>9<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="10" required><span>10<span class="vh"> out of 10</span></span></label>
+              </div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">
+                <span>1 · Not at all comfortable</span><span style="text-align: right">10 · Completely comfortable</span>
+              </div>
+            </fieldset>
+            <label style="display: flex; flex-direction: column; gap: 6px">
+              <span style="font-size: 15px; font-weight: 600">Why? <span style="font-weight: 400; font-style: italic; color: #5E584F">One to three sentences, optional.</span></span>
+              <textarea name="reason" rows="3" maxlength="400" placeholder="What would make you comfortable, or not?" style="resize: vertical; padding: 10px 12px; border: 1px solid #C9BFAE; background: #FBFAF6; color: #1B1916; font-size: 16px; line-height: 1.5"></textarea>
+              <span class="count" aria-hidden="true" style="align-self: flex-end; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">0 / 400</span>
+            </label>
+            <label class="hp">Leave this box empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px">
+              <button type="submit" class="send" disabled>Send my rating</button>
+              <span class="hint" role="status" style="font-size: 14px; font-style: italic; color: #5E584F">Pick a number to send your rating.</span>
+            </div>
+          </form>
+          <div class="thanks" role="status" tabindex="-1" hidden style="display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #F3EEE4; border: 1px solid #E2DCD0">
+            <p style="margin: 0; font-size: 17px"><strong style="font-weight: 600; color: #9B2C1F">Thank you.</strong> <span class="thanks-text"></span></p>
+            <p class="thanks-note" style="margin: 0; font-size: 14px; font-style: italic; color: #5E584F"></p>
+            <button type="button" class="change">Change my answer</button>
+          </div>
+        </article>
+
+        <article id="cba-10" class="rate-card" data-name="ElliQ">
+          <div style="display: flex; gap: 18px; align-items: flex-start">
+            <figure style="margin: 0; flex: none; width: 132px; display: flex; flex-direction: column; gap: 4px">
+              <img src="/images/robots/cba-10.jpg" alt="ElliQ, a companion robot" width="132" height="132" loading="lazy" style="display: block; width: 132px; height: 132px; object-fit: cover; background: #F3EEE4">
+              <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 9px; line-height: 1.4; color: #5E584F">Image: Intuition Robotics, product image</figcaption>
+            </figure>
+            <div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #9B2C1F">CBA-10 · Intuition Robotics</span>
+              <h2 id="cba-10-h" style="margin: 0; font-size: 26px; font-weight: 500; line-height: 1.15">ElliQ</h2>
+              <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3F3A33">ElliQ is placed with older adults, often through public programs like New York State’s.</p>
+              <a href="https://whoagreed.hcommons.org/collection/cba-10-elliq/" style="align-self: flex-start; font-size: 14px; font-style: italic; padding-block: 4px">Read the record ↗</a>
+            </div>
+          </div>
+          <dl style="margin: 0; display: flex; flex-direction: column; gap: 6px; padding: 12px 0; border-top: 1px solid #E2DCD0; border-bottom: 1px solid #E2DCD0; font-size: 14px; line-height: 1.45">
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Senses</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">Two cameras, four microphones, and touch. A light ring shows when it’s listening.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Collects</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">Audio and video, which its policy treats as personal information, and possibly health information.</dd>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <dt style="flex: 0 0 78px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #9B2C1F; padding-top: 3px">Processed</dt>
+              <dd style="margin: 0; flex: 1 1 auto; min-width: 0; color: #3F3A33">It needs Wi-Fi to run, so it relies on Intuition Robotics’ online service.</dd>
+            </div>
+          </dl>
+          <div class="result" aria-live="polite" style="font-size: 14px; line-height: 1.5; color: #3F3A33">
+            <p class="avg" style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F"></p>
+            <ul class="said" hidden style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-style: italic"></ul>
+          </div>
+          <form class="rate-form" data-robot="10" style="display: flex; flex-direction: column; gap: 14px">
+            <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+              <legend style="padding: 0; margin-bottom: 8px; font-size: 16px; font-weight: 600">How comfortable would you be having ElliQ in your home?</legend>
+              <div class="scale">
+                <label><input type="radio" name="rating" value="1" required><span>1<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="2" required><span>2<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="3" required><span>3<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="4" required><span>4<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="5" required><span>5<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="6" required><span>6<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="7" required><span>7<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="8" required><span>8<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="9" required><span>9<span class="vh"> out of 10</span></span></label>
+                <label><input type="radio" name="rating" value="10" required><span>10<span class="vh"> out of 10</span></span></label>
+              </div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">
+                <span>1 · Not at all comfortable</span><span style="text-align: right">10 · Completely comfortable</span>
+              </div>
+            </fieldset>
+            <label style="display: flex; flex-direction: column; gap: 6px">
+              <span style="font-size: 15px; font-weight: 600">Why? <span style="font-weight: 400; font-style: italic; color: #5E584F">One to three sentences, optional.</span></span>
+              <textarea name="reason" rows="3" maxlength="400" placeholder="What would make you comfortable, or not?" style="resize: vertical; padding: 10px 12px; border: 1px solid #C9BFAE; background: #FBFAF6; color: #1B1916; font-size: 16px; line-height: 1.5"></textarea>
+              <span class="count" aria-hidden="true" style="align-self: flex-end; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5E584F">0 / 400</span>
+            </label>
+            <label class="hp">Leave this box empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px">
+              <button type="submit" class="send" disabled>Send my rating</button>
+              <span class="hint" role="status" style="font-size: 14px; font-style: italic; color: #5E584F">Pick a number to send your rating.</span>
+            </div>
+          </form>
+          <div class="thanks" role="status" tabindex="-1" hidden style="display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #F3EEE4; border: 1px solid #E2DCD0">
+            <p style="margin: 0; font-size: 17px"><strong style="font-weight: 600; color: #9B2C1F">Thank you.</strong> <span class="thanks-text"></span></p>
+            <p class="thanks-note" style="margin: 0; font-size: 14px; font-style: italic; color: #5E584F"></p>
+            <button type="button" class="change">Change my answer</button>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer style="border-top: 2px solid #1B1916">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 28px 32px 44px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 40px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5E584F">
+      <p style="margin: 0; max-width: 520px; line-height: 1.6">Matthew Lingafelt · United Lutheran Seminary<br>This site doesn’t use cookies or trackers, and nothing here loads from anywhere else.</p>
+      <nav aria-label="Site" style="display: flex; flex-wrap: wrap; gap: 0 20px">
+          <a href="/" style="padding-block: 10px">Home</a>
+          <a href="/current-project" style="padding-block: 10px">Current project</a>
+          <a href="/cv" style="padding-block: 10px">CV</a>
+          <a href="/privacy" style="padding-block: 10px">Privacy</a>
+        </nav>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
