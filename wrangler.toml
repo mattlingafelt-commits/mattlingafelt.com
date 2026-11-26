@@ -11,5 +11,5 @@ database_id = "4160da05-aabb-4765-a8cc-49c44d267f4d"
 # Cloudflare Access for /review: the team domain (like "name.cloudflareaccess.com") and the
 # application's Audience (AUD) tag. Neither is secret. Until both are set, /api/review refuses everyone.
 [vars]
-ACCESS_TEAM_DOMAIN = ""
-ACCESS_AUD = ""
+ACCESS_TEAM_DOMAIN = "bold-pine-e517.cloudflareaccess.com"
+ACCESS_AUD = "3ccce4047b0c34c0c911356ab1c061914429b58ac0196a4e470b625538170a38"
